@@ -1,0 +1,36 @@
+:root {
+  --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+.container {
+  max-width: 40em;
+  padding: 2em;
+  margin: 0 auto;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  /* background-image: linear-gradient(to bottom, #232323, #fff); */
+  min-height: 100%;
+}
+
+h1,
+h2 {
+  margin: 0 0 1em 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.4;
+}
