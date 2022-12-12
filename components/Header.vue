@@ -29,7 +29,7 @@ defineProps({
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 
   h1 {
     font-size: 1.5em;

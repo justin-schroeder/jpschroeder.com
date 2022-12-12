@@ -77,6 +77,8 @@ const projects = [
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 3em;
+  margin-bottom: 3em;
 
   @media (min-width: 60em) {
     margin-left: -6em;
