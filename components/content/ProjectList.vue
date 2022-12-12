@@ -14,7 +14,7 @@ const projects = [
     img: 'autoanimate.svg',
     description:
       'A zero-config, drop-in animation utility that adds smooth transitions to your web&nbsp;app.',
-    tools: ['vue', 'react', 'svelte', 'angular', 'js', 'typescript'],
+    tools: ['vue', 'react', 'svelte', 'angular', 'typescript'],
     link: 'https://auto-animate.formkit.com',
     source: 'https://github.com/formkit/auto-animate',
   },
@@ -30,7 +30,8 @@ const projects = [
   {
     title: 'Vue Formulate',
     img: 'vueformulate.svg',
-    description: 'The easiest way to build forms with&nbsp;Vue&nbsp;2.',
+    description:
+      'The predecessor to FormKit, Vue Formulate is the easiest way to build forms with&nbsp;Vue&nbsp;2.',
     tools: ['vue'],
     link: 'https://www.vueformulate.com',
     source: 'https://github.com/wearebraid/vue-formulate',
@@ -41,13 +42,13 @@ const projects = [
 <template>
   <ul class="project-list">
     <li v-for="project in projects" :key="project.title">
-      <div class="lockup">
+      <a :href="project.link" class="lockup">
         <img :src="`/img/${project.img}`" alt="FormKit" class="logo" />
         <div class="details">
           <h3 class="details-title">{{ project.title }}</h3>
           <span class="details-description" v-html="project.description" />
         </div>
-      </div>
+      </a>
       <div class="project-footer">
         <SupportedTools class="project-tools" :tools="project.tools" />
         <ul class="project-links">
@@ -73,20 +74,43 @@ const projects = [
 .project-list {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-  & > li {
-    margin-bottom: 1.5em;
-    display: block;
-    border: 1px solid #eaeaea;
-    padding: 1em;
-    border-radius: 0.5em;
-    text-decoration: none;
-    background-color: white;
+  @media (min-width: 60em) {
+    margin-left: -6em;
+    margin-right: -6em;
   }
 
-  .lockup {
+  & > li {
+    background-color: white;
+    border-radius: 0.5em;
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+    padding: 1em;
+    text-decoration: none;
+    width: 100%;
+
+    @media (min-width: 60em) {
+      width: calc(50% - 0.75em);
+    }
+  }
+
+  a.lockup {
     display: flex;
     align-items: flex-start;
+
+    &:hover {
+      text-decoration: none;
+      .details-title {
+        text-decoration: underline;
+      }
+    }
   }
 
   .project-footer {
@@ -112,6 +136,10 @@ const projects = [
         display: flex;
         align-items: center;
         gap: 0.25em;
+
+        &:hover {
+          text-decoration: underline;
+        }
 
         svg {
           fill: currentColor;
