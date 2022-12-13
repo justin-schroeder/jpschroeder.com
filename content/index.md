@@ -16,3 +16,5 @@ I generally post long form thoughts, opinions, and announcements as articles on 
 <article-list></article-list>
 
 ## Speaking
+
+Speaking is good.
