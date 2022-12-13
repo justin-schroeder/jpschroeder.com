@@ -11,4 +11,8 @@ Creating open source projects is one of my passions. Here are some that I’ve c
 
 ## Articles
 
+I generally post long form thoughts, opinions, and announcements as articles on [dev.to](https://dev.to/dashboard). Here are a few:
+
+<article-list></article-list>
+
 ## Speaking
