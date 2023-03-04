@@ -25,10 +25,7 @@ const articles = [
 <template>
   <ul class="article-list">
     <li v-for="article in articles" :key="article.link">
-      <a
-        href="https://dev.to/justinschroeder/introducing-vue-formulate-truly-delightful-form-authoring-56f5"
-        class="article-card"
-      >
+      <a :href="article.link" class="article-card">
         <h3 v-html="article.title" />
         <p v-html="article.title" />
       </a>
@@ -43,21 +40,21 @@ const articles = [
 }
 .article-card {
   padding: 1em;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border);
   display: block;
   border-radius: 0.5em;
   margin-bottom: 1.5em;
 
   h3 {
     margin: 0 0 0.75em 0;
-    color: black;
+    color: var(--text);
     line-height: 1.5;
   }
 
   p {
     margin-bottom: 0;
     font-size: 0.875em;
-    color: #666;
+    color: var(--text-m);
     max-width: 35em;
   }
 

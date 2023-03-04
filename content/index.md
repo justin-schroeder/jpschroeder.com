@@ -17,4 +17,4 @@ I generally post long form thoughts, opinions, and announcements as articles on 
 
 ## Speaking
 
-Speaking is good.
+I like speaking.

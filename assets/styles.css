@@ -1,10 +1,24 @@
 :root {
   --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --bg: #fff;
+  --text: #000;
+  --text-m: #666;
+  --border: #eaeaea;
+  --link: #005cff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111;
+    --text: #d9d9d9;
+    --text-m: #9f9f9f;
+    --border: #3e3e3e;
+  }
 }
 
 html,
 body {
   min-height: 100%;
+  background-color: var(--bg)
 }
 
 .container {
@@ -18,6 +32,7 @@ body {
   margin: 0;
   font-family: var(--sans);
   min-height: 100%;
+  color: var(--text)
 }
 
 h1{
@@ -29,7 +44,7 @@ h2 {
   position: relative;
 
   a {
-    color: #000;
+    color: var(--text);
     
     &::before {
       content: "#";
@@ -58,7 +73,7 @@ p {
 
 
 a {
-  color: #005cff;
+  color: var(--link);
   text-decoration: none;
 
   &:hover {
