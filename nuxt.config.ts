@@ -16,6 +16,18 @@ export default defineNuxtConfig({
           content:
             'Justin Schroeder is a software engineer, open source creator, and tech speaker.',
         },
+        {
+          property: 'og:image',
+          content: '/og.png',
+        },
+        {
+          name: 'twitter:site',
+          content: '@jpschroeder',
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
       ],
       htmlAttrs: {
         lang: 'en',
