@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Header title="Hi 👋, I’m" />
+    <Header />
     <main>
       <ContentDoc path="/" />
     </main>

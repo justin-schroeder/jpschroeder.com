@@ -2,6 +2,7 @@
   --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   --bg: #fff;
   --text: #000;
+  --paragraph: #333;
   --text-m: #666;
   --border: #eaeaea;
   --link: #005cff;
@@ -12,6 +13,7 @@
     --text: #d9d9d9;
     --text-m: #9f9f9f;
     --border: #3e3e3e;
+    --paragraph: #ccc;
   }
 }
 
@@ -42,6 +44,7 @@ h1{
 h2 {
   margin: 2em 0 1em 0;
   position: relative;
+  font-size: 1.75em;
 
   a {
     color: var(--text);
@@ -69,6 +72,7 @@ p {
   font-size: 1.25em;
   line-height: 1.4;
   margin: 0 0 1.5em 0;
+  color: var(--paragraph);
 }
 
 

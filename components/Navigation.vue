@@ -2,6 +2,11 @@
   <nav>
     <ul>
       <li>
+        <a href="https://twitter.com/intent/user?screen_name=jpschroeder"
+          >@jpschroeder</a
+        >
+      </li>
+      <li>
         <a href="#about">About</a>
       </li>
       <li>
@@ -18,9 +23,6 @@
 </template>
 
 <style lang="postcss" scoped>
-nav {
-  margin-bottom: 1.5em;
-}
 ul {
   list-style-type: none;
   padding: 0;
@@ -30,7 +32,7 @@ ul {
   gap: 1em;
 
   a {
-    color: rgb(150, 150, 150);
+    color: var(--text-m);
     text-decoration: none;
     font-size: 0.875em;
     line-height: 1.4;

@@ -1,12 +1,3 @@
-<script lang="ts" setup>
-defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-});
-</script>
-
 <template>
   <header>
     <div class="avatar-lockup">
@@ -15,16 +6,16 @@ defineProps({
       </div>
       <div class="details">
         <h1>Justin Schroeder</h1>
-        <a href="https://twitter.com/intent/user?screen_name=jpschroeder"
-          >@jpschroeder</a
-        >
+        <Navigation />
       </div>
     </div>
-    <Navigation />
   </header>
 </template>
 
 <style lang="postcss" scoped>
+header {
+  margin-bottom: em;
+}
 .avatar-lockup {
   display: flex;
   align-items: center;

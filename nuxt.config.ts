@@ -7,4 +7,12 @@ export default defineNuxtConfig({
       'postcss-nested': {},
     },
   },
+  app: {
+    head: {
+      title: 'Justin Schroeder',
+      htmlAttrs: {
+        lang: 'en',
+      },
+    },
+  },
 });
