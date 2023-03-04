@@ -10,6 +10,13 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Justin Schroeder',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Justin Schroeder is a software engineer, open source creator, and tech speaker.',
+        },
+      ],
       htmlAttrs: {
         lang: 'en',
       },
