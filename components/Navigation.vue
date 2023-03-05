@@ -7,10 +7,10 @@
         >
       </li>
       <li>
-        <a href="#about">About</a>
+        <a href="#hi-there">About</a>
       </li>
       <li>
-        <a href="#projects">Open source</a>
+        <a href="#open-source">Open source</a>
       </li>
       <li>
         <a href="#articles">Articles</a>

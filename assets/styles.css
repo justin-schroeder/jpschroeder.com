@@ -1,16 +1,18 @@
 :root {
   --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --bg: #fff;
+  --bg: linear-gradient(to bottom, #fff, #ebebeb), #fff;
   --text: #000;
   --paragraph: #333;
+  --text-l: #cacaca;
   --text-m: #666;
   --border: #eaeaea;
   --link: #005cff;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #111;
+    --bg: linear-gradient(to bottom, #1f1f1f, #111), #1f1f1f;
     --text: #d9d9d9;
+    --text-l: #6c6c6c;
     --text-m: #9f9f9f;
     --border: #3e3e3e;
     --paragraph: #ccc;
@@ -20,7 +22,12 @@
 html,
 body {
   min-height: 100%;
-  background-color: var(--bg)
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  background-size: 20%;
 }
 
 .container {
@@ -55,7 +62,7 @@ h2 {
       position: absolute;
       right: calc(100% + .33em);
       top: 1px;
-      color: #e0e0e0;
+      color: var(--text-l);
     }
 
     &:hover {
