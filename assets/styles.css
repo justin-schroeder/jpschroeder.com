@@ -7,6 +7,7 @@
   --text-m: #666;
   --border: #eaeaea;
   --link: #005cff;
+  --card-bg: #fff;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -16,6 +17,8 @@
     --text-m: #9f9f9f;
     --border: #3e3e3e;
     --paragraph: #ccc;
+    --card-bg: #1f1f1f;
+    --link: #ff31fb;
   }
 }
 

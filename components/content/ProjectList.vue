@@ -92,9 +92,8 @@ const projects = [
   }
 
   & > li {
-    background-color: var(--bg);
     border-radius: 0.5em;
-    border: 1px solid var(--border);
+    border: 1px solid transparent;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -103,6 +102,22 @@ const projects = [
     padding: 1em;
     text-decoration: none;
     width: 100%;
+    position: relative;
+    background: var(--card-bg);
+    background-clip: padding-box;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -1px;
+      right: -1px;
+      bottom: -1px;
+      top: -1px;
+      background-color: var(--border);
+      border-radius: 0.5em;
+      z-index: -1;
+    }
 
     @media (min-width: 60em) {
       width: calc(50% - 0.75em);
