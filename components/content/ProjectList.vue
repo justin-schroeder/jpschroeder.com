@@ -42,7 +42,7 @@ const projects = [
 <template>
   <ul class="project-list">
     <li v-for="project in projects" :key="project.title">
-      <a :href="project.link" class="lockup">
+      <NuxtLink :href="project.link" class="lockup">
         <img
           v-if="!project.img.startsWith('<svg')"
           :src="`/img/${project.img}`"
@@ -54,21 +54,21 @@ const projects = [
           <h3 class="details-title">{{ project.title }}</h3>
           <span class="details-description" v-html="project.description" />
         </div>
-      </a>
+      </NuxtLink>
       <div class="project-footer">
         <SupportedTools class="project-tools" :tools="project.tools" />
         <ul class="project-links">
           <li>
-            <a :href="project.source">
+            <NuxtLink :href="project.source">
               <IconGithub />
               <span>Source</span>
-            </a>
+            </NuxtLink>
           </li>
           <li>
-            <a :href="project.link">
+            <NuxtLink :href="project.link">
               <IconBook />
               <span>Docs</span>
-            </a>
+            </NuxtLink>
           </li>
         </ul>
       </div>

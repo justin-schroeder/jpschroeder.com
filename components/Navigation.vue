@@ -2,21 +2,21 @@
   <nav>
     <ul>
       <li>
-        <a href="https://twitter.com/intent/user?screen_name=jpschroeder"
-          >@jpschroeder</a
+        <NuxtLink href="https://twitter.com/intent/user?screen_name=jpschroeder"
+          >@jpschroeder</NuxtLink
         >
       </li>
       <li>
-        <a href="#hi-there">About</a>
+        <NuxtLink href="#hi-there">About</NuxtLink>
       </li>
       <li>
-        <a href="#open-source">Open source</a>
+        <NuxtLink href="#open-source">Open source</NuxtLink>
       </li>
       <li>
-        <a href="#articles">Articles</a>
+        <NuxtLink href="#articles">Articles</NuxtLink>
       </li>
       <li>
-        <a href="#speaking">Speaking</a>
+        <NuxtLink href="#speaking">Speaking</NuxtLink>
       </li>
     </ul>
   </nav>

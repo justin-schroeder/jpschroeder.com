@@ -38,22 +38,28 @@ onMounted(() => {
       </div>
       <ul class="socials">
         <li>
-          <a href="https://twitter.com/justinschroeder" class="icon-link">
+          <NuxtLink
+            href="https://twitter.com/justinschroeder"
+            class="icon-link"
+          >
             <IconTwitter class="icon" role="presentation" />
             <span>Twitter</span>
-          </a>
+          </NuxtLink>
         </li>
         <li>
-          <a href="https://dev.to/justinschroeder" class="icon-link">
+          <NuxtLink href="https://dev.to/justinschroeder" class="icon-link">
             <IconDevTo class="icon" role="presentation" />
             <span>Dev.to</span>
-          </a>
+          </NuxtLink>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/jpschroeder/" class="icon-link">
+          <NuxtLink
+            href="https://www.linkedin.com/in/jpschroeder/"
+            class="icon-link"
+          >
             <IconLinkedIn class="icon" role="presentation" />
             <span>LinkedIn</span>
-          </a>
+          </NuxtLink>
         </li>
       </ul>
     </footer>

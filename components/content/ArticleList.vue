@@ -25,10 +25,10 @@ const articles = [
 <template>
   <ul class="article-list">
     <li v-for="article in articles" :key="article.link">
-      <a :href="article.link" class="article-card">
+      <NuxtLink :href="article.link" class="article-card">
         <h3 v-html="article.title" />
         <p v-html="article.title" />
-      </a>
+      </NuxtLink>
     </li>
   </ul>
 </template>
