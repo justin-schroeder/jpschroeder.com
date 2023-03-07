@@ -2,11 +2,6 @@
   <nav>
     <ul>
       <li>
-        <NuxtLink href="https://twitter.com/intent/user?screen_name=jpschroeder"
-          >@jpschroeder</NuxtLink
-        >
-      </li>
-      <li>
         <NuxtLink href="#hi-there">About</NuxtLink>
       </li>
       <li>
@@ -28,8 +23,13 @@ ul {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
+  position: absolute;
+  top: calc(100% + 0.75em);
+  white-space: nowrap;
+
+  li {
+    margin-right: 1em;
+  }
 
   a {
     color: var(--text-m);

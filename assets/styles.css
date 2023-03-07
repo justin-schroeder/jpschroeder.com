@@ -8,6 +8,7 @@
   --border: #eaeaea;
   --link: #005cff;
   --card-bg: #fff;
+  --glow-1: rgba(0, 0, 0, .6);
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -19,6 +20,7 @@
     --paragraph: #ccc;
     --card-bg: #1f1f1f;
     --link: #ff31fb;
+    --glow-1: white;
   }
 }
 
@@ -62,10 +64,9 @@ h2 {
     &::before {
       content: "#";
       display: inline-block;
-      position: absolute;
-      right: calc(100% + .33em);
       top: 1px;
       color: var(--text-l);
+      margin-right: .25em;
     }
 
     &:hover {
@@ -75,6 +76,14 @@ h2 {
         color: #005cff;
       }
     }
+  }
+}
+
+@media (min-width: 30em) {
+  h2 a::before {
+    position: absolute;
+    right: calc(100% + .33em);
+    margin-right: 0;
   }
 }
 
@@ -92,5 +101,81 @@ a {
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+
+@keyframes spin {
+  0% {
+    left: -25%;
+    top: -5%;
+    transform: rotate(0deg);
+  }
+  35% {
+    left: 70%;
+    top: -5%;
+    transform: rotate(0deg);
+  }
+  37% {
+    transform: rotate(90deg);
+    top: -5%;
+    left: 75%;
+  }
+  50% {
+    transform: rotate(180deg);
+    top: 90%;
+    left: 75%;
+  }
+  80% {
+    transform: rotate(180deg);
+    top: 90%;
+    left: -10%;
+  }
+ 84% {
+    transform: rotate(270deg);
+    top: 90%;
+    left: -25%;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    top: -5%;
+    left: -25%;
+  }
+}
+
+.spinny-bg-thingy {
+  overflow: hidden;
+  border-radius: 0.5em;
+  margin-bottom: 1.5em;
+  position: relative;
+  background-color: var(--border);
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    opacity: 0;
+    background: radial-gradient(
+      circle at left,
+      var(--border) 0%,
+      var(--border) 20%,
+      var(--glow-1) 50%,
+      var(--glow-1) 51%,
+      var(--border) 55%
+    );
+    z-index: 1;
+    width: 50%;
+    height: 50%;
+    transition: opacity 0.3s;
+  }
+
+  &:hover::before {
+    animation: spin 3s linear infinite;
+    opacity: 1;
+    transition: opacity 0.2s;
   }
 }

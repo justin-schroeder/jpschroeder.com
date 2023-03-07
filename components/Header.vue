@@ -6,6 +6,9 @@
       </div>
       <div class="details">
         <h1>Justin Schroeder</h1>
+        <NuxtLink href="https://twitter.com/intent/user?screen_name=jpschroeder"
+          >@jpschroeder</NuxtLink
+        >
         <Navigation />
       </div>
     </div>
@@ -16,6 +19,10 @@
 header {
   margin-bottom: em;
 }
+
+.details {
+  position: relative;
+}
 .avatar-lockup {
   display: flex;
   align-items: center;
@@ -24,6 +31,7 @@ header {
 
   h1 {
     font-size: 1.5em;
+    margin-bottom: 0.1em;
 
     @media (min-width: 37em) {
       font-size: 2em;

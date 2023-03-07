@@ -24,7 +24,11 @@ const articles = [
 
 <template>
   <ul class="article-list">
-    <li v-for="article in articles" :key="article.link">
+    <li
+      v-for="article in articles"
+      :key="article.link"
+      class="spinny-bg-thingy"
+    >
       <NuxtLink :href="article.link" class="article-card">
         <h3 v-html="article.title" />
         <p v-html="article.title" />
@@ -38,12 +42,15 @@ const articles = [
   padding: 0;
   list-style-type: none;
 }
+
 .article-card {
   padding: 1em;
-  border: 1px solid var(--border);
+  margin: 1px;
   display: block;
   border-radius: 0.5em;
-  margin-bottom: 1.5em;
+  background: var(--card-bg);
+  position: relative;
+  z-index: 2;
 
   h3 {
     margin: 0 0 0.75em 0;

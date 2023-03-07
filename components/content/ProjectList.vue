@@ -41,36 +41,42 @@ const projects = [
 
 <template>
   <ul class="project-list">
-    <li v-for="project in projects" :key="project.title">
-      <NuxtLink :href="project.link" class="lockup">
-        <img
-          v-if="!project.img.startsWith('<svg')"
-          :src="`/img/${project.img}`"
-          role="presentation"
-          class="logo"
-        />
-        <span v-else v-html="project.img" class="logo" />
-        <div class="details">
-          <h3 class="details-title">{{ project.title }}</h3>
-          <span class="details-description" v-html="project.description" />
+    <li
+      v-for="project in projects"
+      :key="project.title"
+      class="spinny-bg-thingy"
+    >
+      <div class="project-card">
+        <NuxtLink :href="project.link" class="lockup">
+          <img
+            v-if="!project.img.startsWith('<svg')"
+            :src="`/img/${project.img}`"
+            role="presentation"
+            class="logo"
+          />
+          <span v-else v-html="project.img" class="logo" />
+          <div class="details">
+            <h3 class="details-title">{{ project.title }}</h3>
+            <span class="details-description" v-html="project.description" />
+          </div>
+        </NuxtLink>
+        <div class="project-footer">
+          <SupportedTools class="project-tools" :tools="project.tools" />
+          <ul class="project-links">
+            <li>
+              <NuxtLink :href="project.source">
+                <IconGithub />
+                <span>Source</span>
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink :href="project.link">
+                <IconBook />
+                <span>Docs</span>
+              </NuxtLink>
+            </li>
+          </ul>
         </div>
-      </NuxtLink>
-      <div class="project-footer">
-        <SupportedTools class="project-tools" :tools="project.tools" />
-        <ul class="project-links">
-          <li>
-            <NuxtLink :href="project.source">
-              <IconGithub />
-              <span>Source</span>
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink :href="project.link">
-              <IconBook />
-              <span>Docs</span>
-            </NuxtLink>
-          </li>
-        </ul>
       </div>
     </li>
   </ul>
@@ -91,33 +97,18 @@ const projects = [
     margin-right: -6em;
   }
 
-  & > li {
+  .project-card {
     border-radius: 0.5em;
-    border: 1px solid transparent;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 1.5em;
     padding: 1em;
     text-decoration: none;
-    width: 100%;
+    margin: 1px;
     position: relative;
+    z-index: 2;
     background: var(--card-bg);
-    background-clip: padding-box;
-
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      left: -1px;
-      right: -1px;
-      bottom: -1px;
-      top: -1px;
-      background-color: var(--border);
-      border-radius: 0.5em;
-      z-index: -1;
-    }
 
     @media (min-width: 60em) {
       width: calc(50% - 0.75em);
