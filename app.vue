@@ -1,29 +1,3 @@
-<script setup lang="ts">
-onMounted(() => {
-  // function grain(size: number, color: string) {
-  //   const canvas = document.createElement('canvas');
-  //   const ctx = canvas.getContext('2d')!;
-  //   canvas.width = window.innerWidth;
-  //   canvas.height = window.innerHeight;
-  //   ctx.fillStyle = color;
-  //   for (let x = 0; x < canvas.width; x++) {
-  //     for (let y = 0; y < canvas.height; y++) {
-  //       if (Math.random() > 0.5) {
-  //         ctx.fillRect(x, y, 1, 1);
-  //       }
-  //     }
-  //   }
-  //   // document.body.append(canvas);
-  //   canvas.toBlob((blob) => {
-  //     const url = URL.createObjectURL(blob!);
-  //     document.documentElement.style.setProperty('--bg-image', `url(${url})`);
-  //   });
-  // }
-  // // grain(256, 'hsla(0, 100%, 0%, 1)');
-  // // grain(256, 'hsla(0, 100%, 100%, 1)');
-  // grain(256, 'rgba(125, 125, 125, .5)');
-});
-</script>
 <template>
   <div class="container">
     <Header />
@@ -38,10 +12,7 @@ onMounted(() => {
       </div>
       <ul class="socials">
         <li>
-          <NuxtLink
-            href="https://twitter.com/justinschroeder"
-            class="icon-link"
-          >
+          <NuxtLink href="https://twitter.com/jpschroeder" class="icon-link">
             <IconTwitter class="icon" role="presentation" />
             <span>Twitter</span>
           </NuxtLink>
