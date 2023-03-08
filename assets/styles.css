@@ -19,7 +19,7 @@
     --border: #3e3e3e;
     --paragraph: #ccc;
     --card-bg: #1f1f1f;
-    --link: #ff31fb;
+    --link: #be11e2;
     --glow-1: white;
   }
 }
@@ -79,7 +79,7 @@ h2 {
   }
 }
 
-@media (min-width: 30em) {
+@media (min-width: 48em) {
   h2 a::before {
     position: absolute;
     right: calc(100% + .33em);
@@ -110,11 +110,13 @@ a {
     left: -25%;
     top: -5%;
     transform: rotate(0deg);
+    opacity: 0
   }
   35% {
     left: 70%;
     top: -5%;
     transform: rotate(0deg);
+    opacity: 1;
   }
   37% {
     transform: rotate(90deg);
@@ -125,22 +127,26 @@ a {
     transform: rotate(180deg);
     top: 90%;
     left: 75%;
+    opacity: 0;
   }
   80% {
     transform: rotate(180deg);
     top: 90%;
     left: -10%;
+    opacity: 1;
   }
  84% {
     transform: rotate(270deg);
     top: 90%;
     left: -25%;
+    opacity: .25;
   }
 
   100% {
     transform: rotate(360deg);
     top: -5%;
     left: -25%;
+    opacity: 0;
   }
 }
 
@@ -174,7 +180,7 @@ a {
   }
 
   &:hover::before {
-    animation: spin 3s linear infinite;
+    animation: spin 2s linear forwards;
     opacity: 1;
     transition: opacity 0.2s;
   }

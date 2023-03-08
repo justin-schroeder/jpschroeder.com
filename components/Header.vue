@@ -17,11 +17,13 @@
 
 <style lang="postcss" scoped>
 header {
-  margin-bottom: em;
+  position: relative;
 }
 
 .details {
-  position: relative;
+  @media (min-width: 37em) {
+    position: relative;
+  }
 }
 .avatar-lockup {
   display: flex;

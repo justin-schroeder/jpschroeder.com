@@ -26,6 +26,7 @@ ul {
   position: absolute;
   top: calc(100% + 0.75em);
   white-space: nowrap;
+  left: 0;
 
   li {
     margin-right: 1em;

@@ -92,6 +92,13 @@ const projects = [
   margin-top: 3em;
   margin-bottom: 3em;
 
+  .spinny-bg-thingy {
+    @media (min-width: 60em) {
+      width: calc(50% - 0.75em);
+      display: flex;
+    }
+  }
+
   @media (min-width: 60em) {
     margin-left: -6em;
     margin-right: -6em;
@@ -109,10 +116,7 @@ const projects = [
     position: relative;
     z-index: 2;
     background: var(--card-bg);
-
-    @media (min-width: 60em) {
-      width: calc(50% - 0.75em);
-    }
+    width: calc(100% - 2px);
   }
 
   a.lockup {
