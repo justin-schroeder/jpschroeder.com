@@ -21,6 +21,10 @@ export default defineNuxtConfig({
           content: '/og.png',
         },
         {
+          name: 'twitter:title',
+          content: 'Justin Schroeder • @jpschroeder',
+        },
+        {
           name: 'twitter:site',
           content: '@jpschroeder',
         },
