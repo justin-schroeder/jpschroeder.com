@@ -6,18 +6,18 @@ When I’m not spending time with my wife and three little boys, you’ll find m
 
 ## Open source
 
-Creating open source projects is one of my passions. Here are some that I’ve&nbsp;created.
+Creating open source projects is one of my passions. Here are some that I’ve&nbsp;made.
 
 :ProjectList
 
 ## Articles
 
-I generally post long form thoughts, opinions, and announcements as articles on [dev.to](https://dev.to/dashboard). Here are a&nbsp;few.
+I generally post long form thoughts, opinions, and announcements as articles on [dev.to](https://dev.to/dashboard). Here are a few recent&nbsp;ones.
 
 :ArticleList
 
 ## Speaking
 
-I try to keep a running list of previous talks, meetups, and podcasts appearances&nbsp;here.
+Here’s a running list of previous talks, meetups, and podcasts&nbsp;appearances.
 
 :SpeakingList
