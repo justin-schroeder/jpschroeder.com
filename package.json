@@ -16,7 +16,6 @@
     "slugify": "^1.6.5"
   },
   "dependencies": {
-    "@nuxtjs/web-vitals": "^0.2.2",
     "vue": "^3.2.47"
   }
 }
