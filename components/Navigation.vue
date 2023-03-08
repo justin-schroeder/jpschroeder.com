@@ -2,16 +2,16 @@
   <nav>
     <ul>
       <li>
-        <NuxtLink href="#hi-there">About</NuxtLink>
+        <a href="#hi-there">About</a>
       </li>
       <li>
-        <NuxtLink href="#open-source">Open source</NuxtLink>
+        <a href="#open-source">Open source</a>
       </li>
       <li>
-        <NuxtLink href="#articles">Articles</NuxtLink>
+        <a href="#articles">Articles</a>
       </li>
       <li>
-        <NuxtLink href="#speaking">Speaking</NuxtLink>
+        <a href="#speaking">Speaking</a>
       </li>
     </ul>
   </nav>
