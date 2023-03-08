@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Justin Schroeder',
+      title: 'Justin Schroeder • @jpschroeder',
       meta: [
         {
           name: 'description',
@@ -19,6 +19,10 @@ export default defineNuxtConfig({
         {
           property: 'og:image',
           content: '/og.png',
+        },
+        {
+          name: 'og:title',
+          content: 'Justin Schroeder • @jpschroeder',
         },
         {
           name: 'twitter:title',
