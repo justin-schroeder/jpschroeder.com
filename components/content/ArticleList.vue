@@ -1,6 +1,12 @@
 <script lang="ts" setup>
 const articles = [
   {
+    link: 'https://dev.to/justinschroeder/im-a-software-engineer-what-does-ai-mean-for-me-1e8j',
+    title: 'I’m a software engineer, what does AI mean for&nbsp;me?',
+    description:
+      'The truth is we don’t know how far we are from a future that causes a dramatic shift in engineering&nbsp;labor...',
+  },
+  {
     link: 'https://dev.to/justinschroeder/introducing-autoanimate-add-motion-to-your-apps-with-a-single-line-of-code-34bp',
     title:
       'Introducing AutoAnimate — add motion to your apps with a single line of&nbsp;code.',

@@ -17,6 +17,11 @@ const years: Array<{
         date: new Date('2023-05-25'),
       },
       {
+        location: 'VueJS Live',
+        link: 'https://vuejslive.com',
+        date: new Date('2023-05-15'),
+      },
+      {
         location: 'RVAJS Meetup',
         link: 'https://www.meetup.com/rva-js/events/szjphryfchbdb/',
         date: new Date('2023-05-02'),
