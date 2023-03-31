@@ -7,6 +7,11 @@ const years: Array<{
     year: '2023',
     talks: [
       {
+        location: 'THAT conference',
+        link: 'https://that.us/events/wi/2023/',
+        date: new Date('2023-07-24'),
+      },
+      {
         location: 'VueJS Global Summit',
         link: 'https://events.geekle.us/vuejs23/',
         date: new Date('2023-06-06'),
