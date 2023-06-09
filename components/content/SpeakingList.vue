@@ -12,6 +12,11 @@ const years: Array<{
         date: new Date('2023-07-24'),
       },
       {
+        location: 'SailsConf',
+        link: 'https://sailsconf.com/',
+        date: new Date('2023-06-14'),
+      },
+      {
         location: 'VueJS Global Summit',
         link: 'https://events.geekle.us/vuejs23/',
         date: new Date('2023-06-06'),
