@@ -25,7 +25,7 @@ const projects = [
       'A tool for programming reactive interfaces. It’s 2Kb, requires no build tools, has no virtual DOM, and is blazing&nbsp;fast.',
     tools: ['js', 'typescript'],
     link: 'https://www.arrow-js.com',
-    source: 'https://github.com/justin-schroeder/arrow',
+    source: 'https://github.com/justin-schroeder/arrow-js',
   },
   {
     title: 'Vue Formulate',
