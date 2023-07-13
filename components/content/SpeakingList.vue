@@ -7,6 +7,11 @@ const years: Array<{
     year: '2023',
     talks: [
       {
+        location: 'Connect.tech',
+        link: 'https://2023.connect.tech',
+        date: new Date('2023-10-25'),
+      },
+      {
         location: 'THAT conference',
         link: 'https://that.us/events/wi/2023/',
         date: new Date('2023-07-24'),
