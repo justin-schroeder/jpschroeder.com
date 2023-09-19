@@ -7,6 +7,16 @@ const years: Array<{
     year: '2023',
     talks: [
       {
+        location: 'RVA.js Conf',
+        link: 'https://rvatech.com/rvatech-events/rvajs',
+        date: new Date('2023-11-17'),
+      },
+      {
+        location: 'Vue Toronto',
+        link: 'https://www.vuetoronto.com/',
+        date: new Date('2023-11-10'),
+      },
+      {
         location: 'Connect.tech',
         link: 'https://2023.connect.tech',
         date: new Date('2023-10-25'),
@@ -69,39 +79,30 @@ const years: Array<{
     ],
   },
   {
-    year: '2020',
+    year: 'Ancient history',
     talks: [
       {
         location: 'Views on Vue Podcast',
-        link: 'https://topenddevs.com/podcasts/views-on-vue/episodes/vov-120-vue-formulate-with-justin-schroeder',
       },
       {
         location: 'VueJS Berlin Meetup',
-        link: 'https://www.youtube.com/watch?v=Dj2xPmdXNhs&t=16s',
       },
-    ],
-  },
-  {
-    year: '2018',
-    talks: [
       {
         location: 'EDUI Conference',
       },
       {
         location: 'CVJS Meetup',
       },
-    ],
-  },
-  {
-    year: '2017',
-    talks: [
       {
         location: 'SXSW Interactive',
       },
       {
         location: 'Drupal Gov Con',
       },
-    ],
+      {
+        location: 'It was a long time ago, probably others...',
+      }
+    ]
   },
 ];
 const today = new Date();
