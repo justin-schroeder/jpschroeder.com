@@ -13,8 +13,8 @@
       <ul class="socials">
         <li>
           <NuxtLink href="https://twitter.com/jpschroeder" class="icon-link">
-            <IconTwitter class="icon" role="presentation" />
-            <span>Twitter</span>
+            <IconX class="icon" role="presentation" />
+            <span>X (Twitter)</span>
           </NuxtLink>
         </li>
         <li>
@@ -67,6 +67,7 @@ footer {
 }
 .icon {
   width: 1.5em;
+  height: auto;
 }
 
 a.icon-link {
