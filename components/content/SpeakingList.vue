@@ -17,6 +17,11 @@ const years: Array<{
         date: new Date('2023-11-10'),
       },
       {
+        location: 'GitHub Universe',
+        link: 'https://githubuniverse.com/',
+        date: new Date('2023-11-09'),
+      },
+      {
         location: 'Connect.tech',
         link: 'https://2023.connect.tech',
         date: new Date('2023-10-25'),
