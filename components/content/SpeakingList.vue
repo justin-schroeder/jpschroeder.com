@@ -4,6 +4,21 @@ const years: Array<{
   talks: { location: string; link?: string; date?: Date }[];
 }> = [
   {
+    year: '2024',
+    talks: [
+      {
+        location: 'VueJS Amsterdam',
+        link: 'https://vuejs.amsterdam',
+        date: new Date('2024-02-28'),
+      },
+      {
+        location: 'VueJS Nation',
+        link: 'https://vuejsnation.com',
+        date: new Date('2024-01-24'),
+      },
+    ],
+  },
+  {
     year: '2023',
     talks: [
       {
@@ -106,8 +121,8 @@ const years: Array<{
       },
       {
         location: 'It was a long time ago, probably others...',
-      }
-    ]
+      },
+    ],
   },
 ];
 const today = new Date();
