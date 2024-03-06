@@ -1,6 +1,12 @@
 <script lang="ts" setup>
 const articles = [
   {
+    link: 'https://dev.to/justinschroeder/introducing-tempo-a-new-date-library-for-javascript-and-typescript-359a',
+    title:
+      'Introducing Tempo • A new date library for JavaScript (and&nbsp;TypeScript).',
+    description: 'The easiest way to work with dates in JavaScript.',
+  },
+  {
     link: 'https://dev.to/justinschroeder/im-a-software-engineer-what-does-ai-mean-for-me-1e8j',
     title: 'I’m a software engineer, what does AI mean for&nbsp;me?',
     description:
