@@ -67,6 +67,11 @@ const years: Array<{
         date: new Date('2023-05-25'),
       },
       {
+        location: 'Teach Kelvin Your Thing',
+        link: 'https://www.youtube.com/watch?v=K61oLjg0N4A',
+        date: new Date('2023-05-17'),
+      },
+      {
         location: 'VueJS Live',
         link: 'https://vuejslive.com',
         date: new Date('2023-05-15'),
