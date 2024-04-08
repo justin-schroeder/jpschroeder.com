@@ -7,6 +7,11 @@ const years: Array<{
     year: '2024',
     talks: [
       {
+        location: 'VueJS Live',
+        link: 'https://vuejslive.com',
+        date: new Date('2024-04-25'),
+      },
+      {
         location: 'VueConf US',
         link: 'https://vueconf.us',
         date: new Date('2024-05-17'),
