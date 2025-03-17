@@ -19,6 +19,15 @@ const projects = [
     source: 'https://github.com/formkit/auto-animate',
   },
   {
+    title: 'jsonreader',
+    img: 'jsonreader.svg',
+    description:
+      'Stream JSON data and parse the results before its&nbsp;complete.',
+    tools: ['js', 'typescript'],
+    link: 'https://jsonreader.formkit.com',
+    source: 'https://github.com/formkit/jsonreader',
+  },
+  {
     title: 'Tempo',
     img: 'tempo.svg',
     description: 'The easiest way to work with dates in&nbsp;JavaScript.',

@@ -4,8 +4,33 @@ const years: Array<{
   talks: { location: string; link?: string; date?: Date }[];
 }> = [
   {
+    year: '2025',
+    talks: [
+      {
+        location: 'VueConf US',
+        link: 'https://vueconf.us',
+        date: new Date('2025-05-17'),
+      },
+      {
+        location: 'RVA.js Conf',
+        link: 'https://rvajavascript.com/',
+        date: new Date('2025-03-14'),
+      },
+      {
+        location: 'DejaVue Podcast',
+        link: 'https://www.youtube.com/watch?v=vtv6J3KZXaA&t=4725s',
+        date: new Date('2025-01-30'),
+      },
+    ],
+  },
+  {
     year: '2024',
     talks: [
+      {
+        location: 'vuejs.de Conf',
+        link: 'https://conf.vuejs.de/',
+        date: new Date('2024-10-09'),
+      },
       {
         location: 'JS Nation',
         link: 'https://jsnation.com',
