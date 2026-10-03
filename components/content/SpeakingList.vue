@@ -1,11 +1,69 @@
 <script setup lang="ts">
 const years: Array<{
   year: string;
-  talks: { location: string; link?: string; date?: Date }[];
+  talks: { location: string; link?: string; date?: Date; monthYear?: string }[];
 }> = [
+  {
+    year: '2027',
+    talks: [
+      {
+        location: 'Richmond meetup',
+        monthYear: 'February 2027',
+      },
+    ],
+  },
+  {
+    year: '2026',
+    talks: [
+      {
+        location: 'AGNTCon + MCPCon North America',
+        link: 'https://events.linuxfoundation.org/agntcon-mcpcon-north-america/program/schedule/?id=1260899',
+        monthYear: 'October 2026',
+      },
+      {
+        location: 'Cloudflare Connect',
+        link: 'https://www.cloudflare.com/connect/speakers/',
+        monthYear: 'October 2026',
+      },
+      {
+        location: 'beCamp',
+        link: 'https://be.camp/schedule/',
+        monthYear: 'October 2026',
+      },
+      {
+        location: 'Cville AI Explorers',
+        link: 'https://www.meetup.com/cville-tech/events/315584929/',
+        monthYear: 'July 2026',
+      },
+      {
+        location: "AI Engineer World's Fair Online Track",
+        link: 'https://www.youtube.com/watch?v=spNAUEgq_A8',
+        monthYear: 'June 2026',
+      },
+      {
+        location: 'Standard Agents launch dinner',
+        monthYear: 'February 2026',
+      },
+    ],
+  },
   {
     year: '2025',
     talks: [
+      {
+        location: 'AI-Driven Development Day: MCP Edition',
+        link: 'https://aidd.io/ai-driven-development-day-mcp-edition',
+        monthYear: 'November 2025',
+      },
+      {
+        location: 'AI-Driven Development Day',
+        link: 'https://aidd.io/ai-driven-development-day',
+        monthYear: 'September 2025',
+      },
+      {
+        location: 'Frontend Nation',
+        link: 'https://youtu.be/SgYP2vByzDY',
+        monthYear: 'June 2025',
+      },
       {
         location: 'VueConf US',
         link: 'https://vueconf.us',
@@ -188,7 +246,10 @@ const today = new Date();
               {{ talk.location }}
             </span>
           </component>
-          <ClientOnly>
+          <span v-if="talk.monthYear" class="talk-date">
+            ({{ talk.monthYear }})
+          </span>
+          <ClientOnly v-else>
             <span v-if="talk.date && talk.date > today" class="talk-date">
               (this
               {{ talk.date.toLocaleDateString('en-US', { month: 'long' }) }})
