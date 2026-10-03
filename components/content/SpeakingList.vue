@@ -41,7 +41,7 @@ const years: Array<{
         monthYear: 'June 2026',
       },
       {
-        location: 'Standard Agents launch dinner',
+        location: 'launch',
         monthYear: 'February 2026',
       },
     ],
